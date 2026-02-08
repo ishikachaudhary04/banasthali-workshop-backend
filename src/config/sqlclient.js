@@ -16,7 +16,7 @@ const pool = new Pool({
     // },
     // ssl: ENV_CONFIG.db.ssl,
     ssl: {
-        rejectUnauthorized: false
+        rejectUnauthorized: ENV_CONFIG.db.ssl
     },
     max: 5,
     idleTimeoutMillis: 30000,
